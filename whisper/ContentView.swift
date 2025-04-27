@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = HelloViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            
+            Text(viewModel.greeting)
+                .font(.largeTitle)
+                .padding()
+
+            Button("Ping Server") {
+                viewModel.pingServer()
+            }
+            .padding()
+
+            Spacer()
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

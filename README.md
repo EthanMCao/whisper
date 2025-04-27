@@ -2,33 +2,31 @@ Whisper
 
 A privacy-first iOS chat app with end-to-end encryption.
 
-Project Structure
+##Project Structure
 
-.
-├── .gitignore
-├── README.md
-├── backend/
-│   └── hello.py
-├── Whisper/
-│   └── ContentView.swift
-├── WhisperTests/
-└── WhisperUITests/
+.gitignore
+README.md
+backend/
+  └ hello.py
+Whisper/
+  └ ContentView.swift
+WhisperTests/
+WhisperUITests/
+
+
 
 Getting Started
 
 iOS App
-
-Open Whisper.xcodeproj in Xcode.
-
-Select the Whisper scheme and hit ▶️ Run on the Simulator.
+In your repo root, open Whisper.xcodeproj in Xcode.
+Select the Whisper scheme and click Run to launch in the Simulator.
 
 Backend Stub
-
 cd backend
-git pull  # ensure you have the latest code
-python3 -m venv env
-source env/bin/activate
+python3 -m venv env     # create a virtual environment
+env/bin/activate       # on Windows use `env\Scripts\activate`
 pip install fastapi uvicorn
 uvicorn hello:app --reload
 
-Open http://localhost:8000/hello in your browser to see {"message": "Hello, Whisper!"}.
+Then visit http://localhost:8000/hello in your browser. You should see:
+'''{"message": "Hello, Whisper!"}'''

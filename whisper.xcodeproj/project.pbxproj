@@ -11,9 +11,12 @@
 		AA5CA9B72DBC09900095D022 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9B62DBC09900095D022 /* ContentView.swift */; };
 		AA5CA9B92DBC09910095D022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5CA9B82DBC09910095D022 /* Assets.xcassets */; };
 		AA5CA9BC2DBC09910095D022 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5CA9BB2DBC09910095D022 /* Preview Assets.xcassets */; };
-		AA5CA9C62DBC09910095D022 /* whisperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9C52DBC09910095D022 /* whisperTests.swift */; };
 		AA5CA9D02DBC09910095D022 /* whisperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9CF2DBC09910095D022 /* whisperUITests.swift */; };
 		AA5CA9D22DBC09910095D022 /* whisperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9D12DBC09910095D022 /* whisperUITestsLaunchTests.swift */; };
+		AA5CA9E12DBC392F0095D022 /* HelloViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9E02DBC392F0095D022 /* HelloViewModelTests.swift */; };
+		AA5CA9E42DBCD2A00095D022 /* HelloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9E32DBCD2A00095D022 /* HelloViewModel.swift */; };
+		AA5CA9E72DBCD3FA0095D022 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = AA5CA9E62DBCD3FA0095D022 /* KeychainAccess */; };
+		AA5CA9E92DBCD3FD0095D022 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = AA5CA9E82DBCD3FD0095D022 /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,11 @@
 		AA5CA9B82DBC09910095D022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5CA9BB2DBC09910095D022 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA5CA9C12DBC09910095D022 /* whisperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whisperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA5CA9C52DBC09910095D022 /* whisperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whisperTests.swift; sourceTree = "<group>"; };
 		AA5CA9CB2DBC09910095D022 /* whisperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whisperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5CA9CF2DBC09910095D022 /* whisperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whisperUITests.swift; sourceTree = "<group>"; };
 		AA5CA9D12DBC09910095D022 /* whisperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whisperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA5CA9E02DBC392F0095D022 /* HelloViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewModelTests.swift; sourceTree = "<group>"; };
+		AA5CA9E32DBCD2A00095D022 /* HelloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5CA9E72DBCD3FA0095D022 /* KeychainAccess in Frameworks */,
+				AA5CA9E92DBCD3FD0095D022 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +80,12 @@
 		AA5CA9A82DBC09900095D022 = {
 			isa = PBXGroup;
 			children = (
+				AA5CA9E22DBCC9D20095D022 /* backend */,
 				AA5CA9B32DBC09900095D022 /* whisper */,
 				AA5CA9C42DBC09910095D022 /* whisperTests */,
 				AA5CA9CE2DBC09910095D022 /* whisperUITests */,
 				AA5CA9B22DBC09900095D022 /* Products */,
+				AA5CA9E52DBCD3FA0095D022 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +106,7 @@
 				AA5CA9B62DBC09900095D022 /* ContentView.swift */,
 				AA5CA9B82DBC09910095D022 /* Assets.xcassets */,
 				AA5CA9BA2DBC09910095D022 /* Preview Content */,
+				AA5CA9E32DBCD2A00095D022 /* HelloViewModel.swift */,
 			);
 			path = whisper;
 			sourceTree = "<group>";
@@ -113,7 +122,7 @@
 		AA5CA9C42DBC09910095D022 /* whisperTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA5CA9C52DBC09910095D022 /* whisperTests.swift */,
+				AA5CA9E02DBC392F0095D022 /* HelloViewModelTests.swift */,
 			);
 			path = whisperTests;
 			sourceTree = "<group>";
@@ -125,6 +134,20 @@
 				AA5CA9D12DBC09910095D022 /* whisperUITestsLaunchTests.swift */,
 			);
 			path = whisperUITests;
+			sourceTree = "<group>";
+		};
+		AA5CA9E22DBCC9D20095D022 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		AA5CA9E52DBCD3FA0095D022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +166,10 @@
 			dependencies = (
 			);
 			name = whisper;
+			packageProductDependencies = (
+				AA5CA9E62DBCD3FA0095D022 /* KeychainAccess */,
+				AA5CA9E82DBCD3FD0095D022 /* Starscream */,
+			);
 			productName = whisper;
 			productReference = AA5CA9B12DBC09900095D022 /* whisper.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,10 @@
 				Base,
 			);
 			mainGroup = AA5CA9A82DBC09900095D022;
+			packageReferences = (
+				AA5CA9DE2DBC37500095D022 /* XCRemoteSwiftPackageReference "Starscream" */,
+				AA5CA9DF2DBC376A0095D022 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = AA5CA9B22DBC09900095D022 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5CA9B72DBC09900095D022 /* ContentView.swift in Sources */,
+				AA5CA9E42DBCD2A00095D022 /* HelloViewModel.swift in Sources */,
 				AA5CA9B52DBC09900095D022 /* whisperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5CA9C62DBC09910095D022 /* whisperTests.swift in Sources */,
+				AA5CA9E12DBC392F0095D022 /* HelloViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +614,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA5CA9DE2DBC37500095D022 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+		AA5CA9DF2DBC376A0095D022 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA5CA9E62DBCD3FA0095D022 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA5CA9DF2DBC376A0095D022 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		AA5CA9E82DBCD3FD0095D022 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA5CA9DE2DBC37500095D022 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA5CA9A92DBC09900095D022 /* Project object */;
 }
