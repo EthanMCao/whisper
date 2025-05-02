@@ -17,6 +17,13 @@
 		AA5CA9E42DBCD2A00095D022 /* HelloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CA9E32DBCD2A00095D022 /* HelloViewModel.swift */; };
 		AA5CA9E72DBCD3FA0095D022 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = AA5CA9E62DBCD3FA0095D022 /* KeychainAccess */; };
 		AA5CA9E92DBCD3FD0095D022 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = AA5CA9E82DBCD3FD0095D022 /* Starscream */; };
+		AA93605C2DC4391600D72C89 /* MyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA93605A2DC4391600D72C89 /* MyAPI.swift */; };
+		AA93605D2DC4391600D72C89 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA93605B2DC4391600D72C89 /* MessageViewModel.swift */; };
+		AA93605F2DC4392F00D72C89 /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA93605E2DC4392F00D72C89 /* AlertError.swift */; };
+		AA9360612DC4393600D72C89 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9360602DC4393600D72C89 /* AuthViewModel.swift */; };
+		AA9360632DC4393D00D72C89 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9360622DC4393D00D72C89 /* ChatView.swift */; };
+		AA9360652DC4394500D72C89 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9360642DC4394500D72C89 /* ChatViewModel.swift */; };
+		AA9360672DC4395300D72C89 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9360662DC4395300D72C89 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		AA5CA9D12DBC09910095D022 /* whisperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whisperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA5CA9E02DBC392F0095D022 /* HelloViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewModelTests.swift; sourceTree = "<group>"; };
 		AA5CA9E32DBCD2A00095D022 /* HelloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewModel.swift; sourceTree = "<group>"; };
+		AA93605A2DC4391600D72C89 /* MyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPI.swift; sourceTree = "<group>"; };
+		AA93605B2DC4391600D72C89 /* MessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		AA93605E2DC4392F00D72C89 /* AlertError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
+		AA9360602DC4393600D72C89 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		AA9360622DC4393D00D72C89 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		AA9360642DC4394500D72C89 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		AA9360662DC4395300D72C89 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,13 @@
 		AA5CA9B32DBC09900095D022 /* whisper */ = {
 			isa = PBXGroup;
 			children = (
+				AA9360662DC4395300D72C89 /* LoginView.swift */,
+				AA9360642DC4394500D72C89 /* ChatViewModel.swift */,
+				AA9360622DC4393D00D72C89 /* ChatView.swift */,
+				AA9360602DC4393600D72C89 /* AuthViewModel.swift */,
+				AA93605E2DC4392F00D72C89 /* AlertError.swift */,
+				AA93605B2DC4391600D72C89 /* MessageViewModel.swift */,
+				AA93605A2DC4391600D72C89 /* MyAPI.swift */,
 				AA5CA9B42DBC09900095D022 /* whisperApp.swift */,
 				AA5CA9B62DBC09900095D022 /* ContentView.swift */,
 				AA5CA9B82DBC09910095D022 /* Assets.xcassets */,
@@ -290,7 +311,14 @@
 			files = (
 				AA5CA9B72DBC09900095D022 /* ContentView.swift in Sources */,
 				AA5CA9E42DBCD2A00095D022 /* HelloViewModel.swift in Sources */,
+				AA93605D2DC4391600D72C89 /* MessageViewModel.swift in Sources */,
+				AA9360612DC4393600D72C89 /* AuthViewModel.swift in Sources */,
+				AA9360632DC4393D00D72C89 /* ChatView.swift in Sources */,
+				AA93605C2DC4391600D72C89 /* MyAPI.swift in Sources */,
 				AA5CA9B52DBC09900095D022 /* whisperApp.swift in Sources */,
+				AA9360652DC4394500D72C89 /* ChatViewModel.swift in Sources */,
+				AA9360672DC4395300D72C89 /* LoginView.swift in Sources */,
+				AA93605F2DC4392F00D72C89 /* AlertError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
